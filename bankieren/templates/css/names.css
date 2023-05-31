@@ -1,0 +1,38 @@
+
+
+body{
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+.title{
+    font-size: 5rem;
+    text-align: center;
+}
+.namen-list {
+    font-size: 1.5rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.namen-list-item {
+    background: #2d2d2d;
+    color: #fff;
+    padding: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    transition: 0.5s ease-in-out;
+    align-content: center;
+    justify-content: center;
+}
+.namen-list-item:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.namen-img{
+    height: 20rem;
+}

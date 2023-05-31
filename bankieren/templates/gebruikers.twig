@@ -1,0 +1,17 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+  <h1>Gebruikers</h1>
+  <ul class="namen-list">
+    {% for gebruiker in gebruikers %}
+      <li class="namen-list-item">
+        <img class="namen-img" src="{{ gebruiker.image }}" alt="{{ gebruiker.voornaam }} {{ gebruiker.achternaam }}'s Image">
+        <div>
+          Voornaam: {{ gebruiker.voornaam }} <br>
+          Achternaam: {{ gebruiker.achternaam }} <br>
+          Leeftijd: {{ gebruiker.leeftijd }} jaar
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
